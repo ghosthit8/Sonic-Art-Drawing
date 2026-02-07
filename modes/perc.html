@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perc</title>
+  <link rel="stylesheet" href="../assets/ui.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="modeTitle">Perc</div>
+      <div class="subtitle">hits / resonator / snap</div>
+    </div>
+    <div class="top-actions">
+      <a class="btn small" href="../index.html">Menu</a>
+      <button id="startBtn" class="btn small">Start Audio</button>
+      <button id="pauseBtn" class="btn small">Pause</button>
+      <button id="clearBtn" class="btn small">Clear</button>
+      <button id="saveBtn" class="btn small">Save PNG</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="canvasWrap"><canvas id="pad"></canvas></div>
+    <aside class="panel">
+      <h3>Readout</h3>
+      <div class="pillRow">
+        <div class="pill"><b>x</b><span id="pill_x">0.500</span></div>
+        <div class="pill"><b>y</b><span id="pill_y">0.500</span></div>
+        <div class="pill"><b>speed</b><span id="pill_speed">0.00</span></div>
+        <div class="pill"><b>pressure</b><span id="pill_pressure">0.00</span></div>
+      </div>
+
+      <h3>Controls</h3>
+      <div id="controls" class="controls"></div>
+
+      <div class="hint">
+        Tip: fast motion triggers more hits. X chooses pitch. Y changes damping.
+      </div>
+    </aside>
+  </main>
+
+  <script src="../assets/perc.js"></script>
+  <script src="../assets/base.js"></script>
+</body>
+</html>
